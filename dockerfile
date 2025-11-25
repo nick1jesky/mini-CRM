@@ -1,11 +1,10 @@
 FROM python:3.14.0
 
-WORKDIR /lead_distribution
+WORKDIR /app
 
-COPY ./lead_distribution/requirements.txt .
-
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /lead_distribution
+COPY . /app
 
 CMD ["python", "main.py"]

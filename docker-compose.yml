@@ -6,8 +6,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./database:/app/database
-      - ./logs:/app/logs
+      - .:/app 
     environment:
     - PYTHONPATH=/app
     restart: unless-stopped
