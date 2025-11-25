@@ -1,5 +1,5 @@
 import uvicorn
-from lead_distributiion.server import app
+from lead_distribution.server import app
 
 
 if __name__ == "__main__":
