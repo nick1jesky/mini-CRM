@@ -1,8 +1,8 @@
 # mini-CRM
 
-### Запуск (без docker-compose)
+### Запуск
 ```bash
-uvicorn server:app --reload --host 0.0.0.0 --port 8000
+docker-compose up
 ```
 
 Документация **Swagger**: http://localhost:8000/docs
